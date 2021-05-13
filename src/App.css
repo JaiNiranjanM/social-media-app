@@ -1,0 +1,250 @@
+.main-container {
+  min-height: 700px;
+  width: 90%;
+  margin: 20px auto;
+  border: 2px solid #a9b2c3;
+  display: flex;
+  flex-direction: column;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.header-container {
+  height: 32px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  border-bottom: 2px solid #a9b2c3;
+  background-color: #dae3f2;
+  color: #467fb5;
+  font-size: 22px;
+}
+
+.search-sort-container {
+  display: flex;
+  flex-flow: row;
+  height: 40px;
+  justify-content: flex-start;
+  align-items: center;
+  border-bottom: 2px solid #a9b2c3;
+  color: #a4adce;
+}
+
+.sort-container {
+  display: flex;
+  flex-flow: row;
+}
+
+.sort-container-liked-label:hover,
+.sort-container-commented-label:hover,
+.product-desc-like:hover {
+  color: #5185b2;
+  cursor: pointer;
+}
+
+.search-input {
+  height: 22px;
+  font-size: 15px;
+  border: 2px solid #848e97;
+  width: 248px;
+}
+
+.search-container {
+  margin-left: 23%;
+}
+
+.search-input::placeholder {
+  color: #c6c6c6;
+  margin: 10px;
+}
+
+.sort-container-divider {
+  margin: 0;
+  border-right: 1px solid #a8abcd;
+}
+
+.sort-container div {
+  border-bottom: 1px solid #bbbfd9;
+  margin: 0 18px;
+}
+
+.product-main-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 0 auto;
+  width: 96%;
+}
+
+.product-container {
+  width: 250px;
+  border: 2px solid #828c90;
+  margin: 20px 100px;
+  height: 332px;
+}
+
+.product-img-container {
+  border-bottom: 2px solid #828c90;
+}
+
+.product-post-list-container {
+  height: 108px;
+  overflow-x: auto;
+}
+
+.product-img-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.product-body-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-desc-container {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 2px solid #828c90;
+  height: 25px;
+
+  align-items: center;
+  position: relative;
+}
+
+.product-post-container {
+  display: flex;
+  flex-direction: row;
+  height: 25px;
+  position: relative;
+  border-bottom: 2px solid #828c90;
+}
+
+.product-posts-label {
+  border-bottom: 2px solid #828c90;
+  padding: 0 10px;
+  height: 25px;
+  line-height: 25px;
+  background-color: #e3efd9;
+}
+
+.product-desc-like-count {
+  color: #c48757;
+  margin: 0 0 0 18px;
+}
+
+.product-desc-like {
+  margin: 0 10px;
+  color: #579dcd;
+  border-bottom: 1px solid #579dcd;
+}
+
+.product-desc-label {
+  position: absolute;
+  right: 10px;
+}
+
+button.post-button {
+  width: 80px;
+  border: none;
+  right: 0;
+  position: absolute;
+  height: 25px;
+  background-color: #579dcd;
+  color: #273b3e;
+  font-weight: 700;
+}
+
+input.post-input {
+  border: none;
+  width: 162px;
+  font-size: 11px;
+  padding-left: 5px;
+  font-weight: 700;
+}
+
+input.post-input::placeholder {
+  color: #c6c6c6;
+  margin: 10px;
+  margin-right: 0px;
+}
+
+.sort-container div.sort-container-liked-label {
+  margin-right: 0px;
+}
+
+.sort-container div.sort-container-commented-label {
+  margin-left: 0px;
+}
+
+#overlay {
+  position: fixed;
+  z-index: 999;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+#pop-up {
+  background-color: white;
+  height: 400px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+}
+
+.mask {
+  background: rgba(0, 0, 0, 0.8);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+img.overlay-image {
+  width: 100%;
+  height: 100%;
+}
+
+dropdown-down::-webkit-scrollbar,
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-border-radius: 10px;
+  border-radius: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background: #8a98a6;
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+  background: #8a98a6;
+}
+
+.clear-search-input {
+  position: absolute;
+  right: 6px;
+  line-height: 29px;
+  color: #ff3333;
+  font-weight: 700;
+  font-size: 12px;
+}
+
+.search-input-container {
+  position: relative;
+}
+
+.tag-remove::before {
+  content: "x";
+  color: #fff;
+  font-weight: 300;
+  font-family: Arial, sans-serif;
+}
