@@ -49,7 +49,7 @@
 }
 
 .search-container {
-  margin-left: 23%;
+  margin-left: 16%;
 }
 
 .search-input::placeholder {
@@ -78,7 +78,7 @@
 .product-container {
   width: 250px;
   border: 2px solid #828c90;
-  margin: 20px 100px;
+  margin: 20px 55px;
   height: 332px;
 }
 
