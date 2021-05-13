@@ -58,10 +58,11 @@ const App = (props) => {
     setPostDesc(event.target.value);
   };
 
-  const handlePost = () => {
+  const handlePost = (index) => {
     const initialData = Object.assign({}, props.siteData);
-    const postDetails = initialData.pics.map((item) => {
-      const comments = item.comments.unshift(postDesc);
+    const postDetails = initialData.pics.map((item, idx) => {
+      const comments =
+        index === idx ? item.comments.unshift(postDesc) : item.comments;
       return {
         ...item,
       };
@@ -244,7 +245,10 @@ const App = (props) => {
                         placeholder="Type your comments here..."
                         onChange={handleInputPostOnChange}
                       />
-                      <button onClick={handlePost} className="post-button">
+                      <button
+                        onClick={() => handlePost(index)}
+                        className="post-button"
+                      >
                         POST
                       </button>
                     </div>
